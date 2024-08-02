@@ -1,0 +1,30 @@
+body{background-color: #7fffd4;}
+ul{margin: 100px 0px;}
+ul.block li{display: block;margin: 20px 20px;padding: 20px 20px;
+    width: 50px;height: 50px;background-color: blueviolet;}
+ul.inline li{display: inline;margin: 20px 20px;padding: 20px 20px;
+    width: 150px;height: 150px;background-color: brown;}
+ul.inline-block li{display: inline-block;margin: 20px 20px;padding: 20px 20px;
+        width: 150px;height: 150px;background-color: blue;}
+ul.none li{display: none;}
+ul.hidden li{visibility: hidden;margin: 20px 20px;background-color: blue;}
+ul.opacity li{opacity: 0.5;}
+
+.static p{position: static;}
+.relative{margin: 50px;}
+.relative p{position: relative;}
+
+.absolute{position: relative;}
+.absolute a{background-color: chartreuse;padding: 30px 50px;
+    display: inline-block;font-size: 25px;text-transform: uppercase;
+    letter-spacing: 10px;word-spacing: 50px;border-radius: 50px;
+    position: absolute;top: 200px;}
+
+.fixed a{background-color: cornflowerblue;padding: 30px 50px;
+        display: inline-block;font-size: 25px;text-transform: uppercase;
+        letter-spacing: 10px;word-spacing: 50px;border-radius: 50px;
+        position: fixed;top: 200px;right: -150px;transform: rotate(90deg);}
+.sticky a {background-color: chocolate;padding: 30px 50px;
+    display: inline-block;font-size: 25px;text-transform: uppercase;
+    letter-spacing: 10px;word-spacing: 50px;border-radius: 50px;
+    position: sticky;top: 0px;}
