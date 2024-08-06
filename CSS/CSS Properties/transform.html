@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+
+    <style>
+        .transform{width: 300px;background-color: azure;padding: 50px;transform: skew(6deg);
+            overflow: hidden;}
+        .transform h1{transform: rotate(60deg) translate(160px);}
+        .transform .im{transform: scale(1);transition: all 0.5s ease;width: 100%;}
+        .transform .im:hover{transform: scale(1.5);}
+
+        .animations{margin: 50px;width: 200px;height: 200px;
+            background-color: aquamarine; animation: anim 2s ease-in infinite;
+            /* animation-name: anim;animation-duration: 2s;animation-timing-function: ease-in;
+            animation-delay: 0s; */}
+
+            @media (min-width: 100px) and (max-width: 767px){
+                .animations{width: 100%;}
+            }
+
+        @keyframes anim{
+            0%{background-color: aqua;}
+            50%{background-color: gainsboro;}
+            100%{background-color: red;}
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <section>
+        <div class="transform">
+            <h1>Transform Elements</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam praesentium repellendus in unde, nihil, facere, et officiis esse sed tempora cupiditate cumque aperiam architecto possimus repudiandae itaque fugiat nobis accusantium.</p>
+        <img src="1.png" alt="Image" class="im" />
+            </div>
+    </section>
+
+    <section>
+        <div class="animations">
+        </div>
+    </section>
+    
+</body>
+</html>
