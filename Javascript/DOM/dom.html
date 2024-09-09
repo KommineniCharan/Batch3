@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Modelling</title>
+</head>
+<body>
+    
+<!-- To Work with HTML Documents for Javascript, we use DOM(Document Object Modelling) -->
+<!-- By Using DOM, we can target specific elements in a HTML Page
+By using DOM, we can insert dynamic content within a page. Also we can
+style a property using HTML DOM -->
+
+<!-- ID -->
+<h2 id="h2"></h2>
+
+<!-- Class -->
+<div class="para"></div>
+
+<!-- Tag -->
+<p></p>
+
+<!-- Query -->
+<div class="qu"></div>
+
+<!-- querySelectorAll -->
+<p class="qal"></p>
+<p class="qal"></p>
+<p class="qal"></p>
+
+<script>
+
+    document.getElementById('h2').innerHTML="HTML Course";
+    document.getElementById('h2').style.backgroundColor="red";
+    document.getElementById('h2').style.color="yellow";
+
+    let pa = document.getElementsByClassName('para');
+    if(pa.length>0){
+        pa[0].innerHTML="Hello";
+        pa[0].style.backgroundColor="yellow"
+    }
+
+    let tag = document.getElementsByTagName('p');
+    if(tag.length>0){
+        tag[0].innerHTML="Tag Reference";
+        tag[0].style.backgroundColor="green"
+        tag[0].style.color="white"
+    }
+
+    let qr = document.querySelector('.qu');
+    if(qr){
+        qr.innerHTML="Query Selector"
+    }
+
+    let qa = document.querySelectorAll('.qal');
+    qa.forEach((element) => {
+        element.innerHTML="QuerySelectorAll"
+    })
+
+</script>
+
+</body>
+</html>
