@@ -1,5 +1,5 @@
 // let doTask = (success, failure) => {
-//   flag = false;
+//   flag = true;
 //   flag ? success("Success") : failure("Failure");
 // };
 
