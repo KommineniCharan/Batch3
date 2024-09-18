@@ -5,7 +5,7 @@ class Employee extends Component {
     return (
       <>
         <h2>This is Employee Class Component</h2>
-        //JSON.stringify will convert objects into string data type
+        /**JSON.stringify will convert objects into string data type**/
         <pre>{JSON.stringify(this.props.user)}</pre>
         <h4>Employee Id: {this.props.user.id}</h4>
         <h4>Employee Name: {this.props.user.name}</h4>
