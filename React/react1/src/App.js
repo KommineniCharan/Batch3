@@ -1,5 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Functional from "./functional";
+import Classcomp from "./Classcomp";
+import User from "./User";
+import Employee from "./Employee";
 
 function App() {
   return (
@@ -18,6 +22,10 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <Functional />
+      <Classcomp />
+      <User />
     </div>
   );
 }
