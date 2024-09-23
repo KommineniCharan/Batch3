@@ -3,11 +3,25 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import Navbar from "./Navbar";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import User from "./User";
+import Functionalcomp from "./Functionalcomp";
+import Buttons from "./Buttons";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<App />}></Route>
+        <Route path="/User" element={<User />}></Route>
+        <Route path="/Buttons" element={<Buttons />}></Route>
+        <Route path="/Functionalcomp" element={<Functionalcomp />}></Route>
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 

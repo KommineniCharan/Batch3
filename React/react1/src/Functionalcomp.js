@@ -1,6 +1,6 @@
 import React from "react";
 
-let functional = () => {
+let Functionalcomp = () => {
   return (
     <div>
       <h1>This is Functional Component</h1>
@@ -9,4 +9,4 @@ let functional = () => {
   );
 };
 
-export default functional;
+export default Functionalcomp;

@@ -1,9 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Functional from "./functional";
-import Classcomp from "./Classcomp";
-import User from "./User";
-import Employee from "./Employee";
+// import Functional from "./functional";
+// import Classcomp from "./Classcomp";
+// import User from "./User";
+// import Buttons from "./Buttons";
+
+import Stateclass from "./Stateclass";
+import Statefunc from "./Statefunc";
+import Ueffect from "./Ueffect";
 
 function App() {
   return (
@@ -23,9 +27,9 @@ function App() {
         </a>
       </header>
 
-      <Functional />
-      <Classcomp />
-      <User />
+      <Stateclass />
+      <Statefunc />
+      <Ueffect />
     </div>
   );
 }
